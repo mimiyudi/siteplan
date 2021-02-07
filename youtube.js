@@ -1,18 +1,1 @@
-if (document.querySelector("#videoPlayer")) {
-  document.querySelector("#videoPlayer a").addEventListener("click", playVideo);
-}
-function playVideo() {
-  var player = document.getElementById("videoPlayer");
-  var id = player.getAttribute("data-id");
-  player.classList.add("loaded");
-  var src =
-    "https://www.youtube.com/embed/" +
-    id +
-    "?autoplay=1&autohide=1&rel=0&modestbranding=1&showinfo=0&border=0&wmode=opaque&theme=light&iv_load_policy=3";
-  var iframe =
-    "<iframe width='100%' height='100%' src='" +
-    src +
-    "' scrolling='no frameborder='0' allowfullscreen></iframe>";
-  player.innerHTML = iframe;
-  return false;
-}
+if (document.querySelector(&quot;#videoPlayer&quot;)) { document.querySelector(&quot;#videoPlayer a&quot;).addEventListener(&quot;click&quot;, playVideo); } function playVideo() { var player = document.getElementById(&quot;videoPlayer&quot;); var id = player.getAttribute(&quot;data-id&quot;); player.classList.add(&quot;loaded&quot;); var src = &quot;https://www.youtube.com/embed/&quot; + id + &quot;?autoplay=1&amp;autohide=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;border=0&amp;wmode=opaque&amp;theme=light&amp;iv_load_policy=3&quot;; var iframe = &quot;&lt;iframe width='100%' height='100%' src='&quot; + src + &quot;' scrolling='no frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&quot;; player.innerHTML = iframe; return false; };
